@@ -1,0 +1,240 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    letter-spacing: -0.01em; 
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: #F5F5F7; 
+}
+
+/* ------------ Bên trái (Ảnh tràn viền) --------------- */
+.left-side {
+    width: 60%;
+    height: 100%;
+    background-image: url('https://cdn-media.sforum.vn/storage/app/media/doanphuong/anh-iphone-17/anh-iphone-17-th.jpg');
+    background-size: 90% auto;       
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-color: #F5F5F7;
+}
+
+/* --------------------------------------------------------- Bên phải --------------------------------------------------------- */
+img {
+    max-width: 100%; 
+    height: auto;     
+    display: block;
+}
+
+.right-side {
+    width: 40%;
+    height: 100%;
+    background-color: #FFFFFF; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.login-box {
+    width: 100%;
+    max-width: 380px; 
+}
+
+.login-title {
+    text-align: center;
+    color: #1D1D1F; 
+    margin-bottom: 35px;
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+}
+
+/* Khung ô nhập dữ liệu */
+.input-group {
+    margin-bottom: 18px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 13px;
+    color: #1D1D1F; 
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #D2D2D7; 
+    border-radius: 12px;      
+    font-size: 15px;
+    color: #1D1D1F;
+    background-color: #FFFFFF;
+    outline: none;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Input */
+.input-group input:hover {
+    border-color: #86868B;
+}
+
+.input-group input:focus {
+    border-color: #0071E3; 
+    box-shadow: 0 0 0 4px rgba(0, 113, 227, 0.15); 
+}
+
+/* Quên mật khẩu */
+.forgot-pass {
+    text-align: right;
+    margin-bottom: 24px;
+}
+
+.forgot-pass a {
+    color: #0071E3;
+    font-size: 13px;
+    text-decoration: none;
+    transition: text-decoration 0.2s;
+}
+
+.forgot-pass a:hover {
+    text-decoration: underline; 
+}
+
+/* Nút Submit */
+.btn-submit {
+    width: 100%;
+    padding: 14px;
+    background-color: #1D1D1F; 
+    color: #FFFFFF;
+    border: none;
+    border-radius: 12px;      
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-submit:hover {
+    background-color: #424245;
+}
+
+.btn-submit:active {
+    transform: scale(0.99); 
+}
+
+/* ------------------------------------------ Đường gạch ngang "Hoặc" ------------------------------------ */
+.ngan-cach {
+    text-align: center;
+    position: relative;
+    margin: 28px 0;
+}
+
+.ngan-cach::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #D2D2D7; 
+    z-index: 1;
+}
+
+.ngan-cach span {
+    background-color: #FFFFFF;
+    padding: 0 16px;
+    color: #6E6E73; 
+    font-size: 13px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Nút Login MXH */
+.social-login {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 35px;
+}
+
+.social-login button {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #D2D2D7;
+    border-radius: 12px;
+    background-color: #FFFFFF;
+    font-size: 14px;
+    color: #1D1D1F;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.social-login button:hover {
+    background-color: #F5F5F7; 
+    border-color: #86868B;
+}
+
+.social-login button img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+}
+
+/*------------------------------------ Chuyển trang + Footer ---------------------------- */
+.switch-page {
+    text-align: center;
+    font-size: 14px;
+    color: #6E6E73; 
+    margin-bottom: 40px;
+}
+
+.switch-page a {
+    color: #0071E3; 
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.switch-page a:hover {
+    text-decoration: underline;
+}
+
+.form-footer {
+    text-align: center;
+    font-size: 12px;
+    color: #6E6E73;
+}
+
+.form-footer a {
+    color: #6E6E73;
+    text-decoration: underline; 
+}
+
+.form-footer a:hover {
+    color: #1D1D1F; 
+}
+
+@media (max-width: 850px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+    .left-side, .right-side {
+        width: 100%;
+        height: auto;
+        padding: 40px 24px;
+    }
+    .left-side {
+        display: none; 
+    }
+}
