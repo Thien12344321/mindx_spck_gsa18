@@ -9,24 +9,33 @@
 </head>
 
 <body>
+
     <div class="container">
 
         <div class="left-side">
         </div>
 
-
         <div class="right-side">
+
             <div class="login-box">
+
+                <div class="logo"></div>
+
                 <h2 class="login-title">Đăng nhập</h2>
 
-                <form id="log">
+                <p class="login-subtitle">
+                    Chào mừng bạn quay trở lại iZone!
+                </p>
+
+                <form id="login-form">
+
                     <div class="input-group">
-                        <label for="log-name">Email</label>
-                        <input type="email" id="log-name" placeholder="Nhập email của bạn" required>
+                        <label>Email</label>
+                        <input type="email" id="log-email" placeholder="Nhập email của bạn" required>
                     </div>
 
                     <div class="input-group">
-                        <label for="log-password">Mật khẩu</label>
+                        <label>Mật khẩu</label>
                         <input type="password" id="log-password" placeholder="Nhập mật khẩu của bạn" required>
                     </div>
 
@@ -34,35 +43,46 @@
                         <a href="#">Quên mật khẩu?</a>
                     </div>
 
-                    <button type="submit" class="btn-submit">Đăng nhập</button>
+                    <button type="submit" class="btn-submit">
+                        Đăng nhập
+                    </button>
+
                 </form>
 
                 <div class="ngan-cach">
-                    <span>Hoặc đăng nhập bằng</span>
+                    <span>Hoặc tiếp tục với</span>
                 </div>
 
                 <div class="social-login">
+
                     <button class="btn-google">
-                        <img src="./img/Google__G__logo.svg.webp" alt="">
-                         Google
-                         <a href="google.com"></a>
-                        </button>
-                    <button class="btn-zalo">
-                        <img src="./img/facebook-icon.png" alt="">
-                        Facebook
-                        <a href="facebook.com"></a>
+                        <img src="./img/Google__G__logo.svg.webp">
+                        Google
                     </button>
+
+                    <button class="btn-zalo">
+                        <img src="./img/facebook-icon.png">
+                        Facebook
+                    </button>
+
                 </div>
 
-                <p class="switch-page">Bạn chưa có tài khoản? <a href="sign-up.html">Đăng ký ngay</a></p>
+                <p class="switch-page">
+                    Bạn chưa có tài khoản?
+                    <a href="sign-up.html">Đăng ký ngay</a>
+                </p>
 
                 <footer class="form-footer">
-                    Mua sắm tại <a href="home.html">iPhoneStore.vn</a>
+                    © 2026 <a href="home.html">iZone.vn</a>
                 </footer>
+
             </div>
+
         </div>
 
     </div>
+
+    <script src="./js/login.js"></script>
 </body>
 
 </html>

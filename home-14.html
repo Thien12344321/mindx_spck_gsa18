@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="./css/home.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+<body>
+
+    <!-- ==========================================================================================
+     
+                                        NAVBAR
+
+        ==================================================================================================-->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="index.html">
+                 iZone
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+
+                <form class="d-flex mx-auto" style="width: 400px;">
+                    <input class="form-control" type="search" placeholder="Tìm kiếm iPhone...">
+                </form>
+
+                <ul class="navbar-nav ms-auto align-items-center">
+
+                    <li class="nav-item me-3">
+                        <a class="nav-link" href="cart.html">
+                            Giỏ hàng
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Tài khoản
+                        </a>
+
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li>
+                                <a class="dropdown-item" href="login.html">
+                                    Đăng nhập
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="sign-up.html">
+                                    Đăng ký
+                                </a>
+                            </li>
+                        </ul>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+    </nav>
+
+
+
+
+
+
+    <!-- ======================================================================================================
+                                          BANNER
+        ========================================================================================================== -->
+
+
+
+
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                class="active"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="banner-split-17">
+                    <div class="banner-text">
+                        <h2>iPhone 17</h2>
+                        <p>Rực rỡ sắc màu. Đột phá cấu hình</p>
+                    </div>
+                    <div class="banner-img-17">
+                        <img src="./img/anh-iphone-17-th.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="banner-split-17e">
+                    <div class="banner-text">
+                        <h2>iPhone 17e</h2>
+                        <p>Giá vừa tầm. Trải nghiệm xứng tầm</p>
+                    </div>
+                    <div class="banner-img-17e">
+                        <img src="./img/iphone-17e-thong-so.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="banner-split-air">
+                    <div class="banner-text">
+                        <h2>iPhone Air</h2>
+                        <p>Mỏng như không khí. Mạnh mẽ không tưởng</p>
+                    </div>
+                    <div class="banner-img-air">
+                        <img src="./img/s-l1600 (2).webp" alt="" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="banner-split-17prmx">
+                    <div class="banner-text">
+                        <h2>iPhone 17 Pro Max</h2>
+                        <p>Titan sa mạc. Đỉnh cao công nghệ</p>
+                    </div>
+                    <div class="banner-img-17prmx">
+                        <img src="./img/anh-iphone-17-51.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- ================================================================================================================
+   
+                                                     NỘI DUNG CHÍNH
+        ====================================================================================================================-->
+
+
+
+
+
+    <div class="explore-header-box">
+        <h2>Khám phá iPhone</h2>
+        <p>Chọn dòng sản phẩm phù hợp với bạn</p>
+    </div>
+
+    <div class="product-filter-section">
+        <div class="section-title-box1">
+            <h4>iPhone</h4>
+        </div>
+        <div class="filter-buttons">
+            <a href="index.html" class="btn-filter">iPhone 17 Series</a>
+            <a href="home-16.html" class="btn-filter">iPhone 16 Series</a>
+            <a href="home-15.html" class="btn-filter">iPhone 15 Series</a>
+            <a href="home-14.html" class="btn-filter active">iPhone 14 Series</a>
+            <a href="home-13.html" class="btn-filter">iPhone 13 Series</a>
+        </div>
+    </div>
+
+
+
+    <div class="filter-criteria-container">
+        <h3 class="filter-criteria-title">Chọn theo tiêu chí</h3>
+
+        <div class="filter-criteria-wrapper">
+            <button type="button" class="btn-criterion-outline-red">
+                <span class="criterion-icon">▼</span> Bộ lọc
+            </button>
+
+            <button type="button" class="btn-criterion-gray">
+                <span class="criterion-icon">🚚</span> Sẵn hàng
+            </button>
+
+            <button type="button" class="btn-criterion-gray">
+                <span class="criterion-icon">🛒</span> Hàng mới về
+            </button>
+
+            <div class="dropdown">
+                <button class="btn-criterion-gray dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    data-bs-auto-close="outside">
+                    Bộ nhớ trong <span class="criterion-arrow">⋁</span>
+                </button>
+                <div class="dropdown-menu filter-spec-menu shadow">
+                    <div class="spec-buttons-grid">
+                        <button type="button" class="btn-spec-option">512 GB</button>
+                        <button type="button" class="btn-spec-option">256 GB</button>
+                        <button type="button" class="btn-spec-option">2 TB</button>
+                        <button type="button" class="btn-spec-option">1 TB</button>
+                        <button type="button" class="btn-spec-option">128 GB</button>
+                        <button type="button" class="btn-spec-option">64 GB</button>
+                        <button type="button" class="btn-spec-option">Dưới 64 GB</button>
+                    </div>
+                    <div class="filter-action-row">
+                        <button type="button" class="btn-action-close" data-bs-toggle="dropdown">Đóng</button>
+                        <a href="link ở đây" class="btn-action-submit">Xem kết quả</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="btn-criterion-gray dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    data-bs-auto-close="outside">
+                    Dung lượng RAM <span class="criterion-arrow">⋁</span>
+                </button>
+                <div class="dropdown-menu filter-spec-menu shadow">
+                    <div class="spec-buttons-grid">
+                        <button type="button" class="btn-spec-option">8 GB</button>
+                        <button type="button" class="btn-spec-option">12 GB</button>
+                        <button type="button" class="btn-spec-option">16 GB</button>
+                    </div>
+                    <div class="filter-action-row">
+                        <button type="button" class="btn-action-close" data-bs-toggle="dropdown">Đóng</button>
+                        <a href="link ở đây" class="btn-action-submit">Xem kết quả</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="btn-criterion-gray dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    data-bs-auto-close="outside">
+                    Tính năng camera <span class="criterion-arrow">⋁</span>
+                </button>
+                <div class="dropdown-menu filter-spec-menu shadow">
+                    <div class="spec-buttons-grid">
+                        <button type="button" class="btn-spec-option">Chụp macro</button>
+                        <button type="button" class="btn-spec-option">Chụp xóa phông</button>
+                        <button type="button" class="btn-spec-option">Chụp góc rộng</button>
+                        <button type="button" class="btn-spec-option">Quay video 4K</button>
+                        <button type="button" class="btn-spec-option">Chống rung</button>
+                        <button type="button" class="btn-spec-option">Chụp Zoom xa</button>
+                        <button type="button" class="btn-spec-option">Quay video 8K</button>
+                        <button type="button" class="btn-spec-option">Camera AI</button>
+                        <button type="button" class="btn-spec-option">Chụp ảnh chuyển động</button>
+                        <button type="button" class="btn-spec-option">Chụp đêm</button>
+                    </div>
+                    <div class="filter-action-row">
+                        <button type="button" class="btn-action-close" data-bs-toggle="dropdown">Đóng</button>
+                        <a href="link ở đây" class="btn-action-submit">Xem kết quả</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="btn-criterion-gray dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    data-bs-auto-close="outside">
+                    Kiểu màn hình <span class="criterion-arrow">⋁</span>
+                </button>
+                <div class="dropdown-menu filter-spec-menu shadow">
+                    <div class="spec-buttons-grid">
+                        <button type="button" class="btn-spec-option">Dynamic Island</button>
+                        <button type="button" class="btn-spec-option">Tai thỏ</button>
+                    </div>
+                    <div class="filter-action-row">
+                        <button type="button" class="btn-action-close" data-bs-toggle="dropdown">Đóng</button>
+                        <a href="link ở đây" class="btn-action-submit">Xem kết quả</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="btn-criterion-gray dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    data-bs-auto-close="outside">
+                    Tần số quét <span class="criterion-arrow">⋁</span>
+                </button>
+                <div class="dropdown-menu filter-spec-menu shadow">
+                    <div class="spec-buttons-grid">
+                        <button type="button" class="btn-spec-option">60Hz</button>
+                        <button type="button" class="btn-spec-option">120Hz</button>
+                    </div>
+                    <div class="filter-action-row">
+                        <button type="button" class="btn-action-close" data-bs-toggle="dropdown">Đóng</button>
+                        <a href="link ở đây" class="btn-action-submit">Xem kết quả</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="section-title-box">
+        <h3>⭐ Sản phẩm nổi bật</h3>
+    </div>
+    <div class="product-grid">
+
+        <!-- iPhone 14 128GB -->
+        <a href="/detail/product-detail.html?id=14-128" class="product-card">
+            <div class="card-img">
+                <img src="./img/ip14-thg-white.webp" alt="iPhone 14 128GB">
+            </div>
+
+            <h3>iPhone 14 128GB</h3>
+            <p class="card-version">Chính hãng VN/A</p>
+
+            <div class="card-rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-text">4.8 (66)</span>
+            </div>
+
+            <div class="card-sold">Đã bán 243</div>
+
+            <div class="card-price-box">
+                <span class="price-current">13.990.000đ</span>
+                <span class="price-old">15.990.000đ</span>
+            </div>
+
+            <div class="card-specs">
+                <span>6.1"</span>
+                <span>6GB</span>
+                <span>128GB</span>
+            </div>
+
+            <div class="card-feature">
+                A15 Bionic • Super Retina XDR
+            </div>
+
+            <div class="card-installment">
+                Trả góp 0% • 0đ phụ phí • Trả trước từ 0đ • Kỳ hạn đến 6 tháng
+            </div>
+        </a>
+
+        <!-- iPhone 14 Pro 256GB -->
+        <a href="/detail/product-detail.html?id=14pro-256" class="product-card">
+            <div class="card-img">
+                <img src="./img/ip14-promax-white.webp" alt="iPhone 14 Pro 256GB">
+            </div>
+
+            <h3>iPhone 14 Pro 256GB</h3>
+            <p class="card-version">Chính hãng VN/A</p>
+
+            <div class="card-rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-text">4.9 (96)</span>
+            </div>
+
+            <div class="card-sold">Đã bán 412</div>
+
+            <div class="card-price-box">
+                <span class="price-current">23.990.000đ</span>
+                <span class="price-old">25.990.000đ</span>
+            </div>
+
+            <div class="card-specs">
+                <span>6.1"</span>
+                <span>6GB</span>
+                <span>256GB</span>
+            </div>
+
+            <div class="card-feature">
+                A16 Bionic • ProMotion 120Hz
+            </div>
+
+            <div class="card-installment">
+                Trả góp 0% • 0đ phụ phí • Trả trước từ 0đ • Kỳ hạn đến 6 tháng
+            </div>
+        </a>
+
+        <!-- iPhone 14 256GB -->
+        <a href="/detail/product-detail.html?id=14-256" class="product-card">
+            <div class="card-img">
+                <img src="./img/ip14-thg-blue.webp" alt="iPhone 14 256GB">
+            </div>
+
+            <h3>iPhone 14 256GB</h3>
+            <p class="card-version">Chính hãng VN/A</p>
+
+            <div class="card-rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-text">4.8 (71)</span>
+            </div>
+
+            <div class="card-sold">Đã bán 264</div>
+
+            <div class="card-price-box">
+                <span class="price-current">15.990.000đ</span>
+                <span class="price-old">17.990.000đ</span>
+            </div>
+
+            <div class="card-specs">
+                <span>6.1"</span>
+                <span>6GB</span>
+                <span>256GB</span>
+            </div>
+
+            <div class="card-feature">
+                A15 Bionic • Super Retina XDR
+            </div>
+
+            <div class="card-installment">
+                Trả góp 0% • 0đ phụ phí • Trả trước từ 0đ • Kỳ hạn đến 6 tháng
+            </div>
+        </a>
+
+        <!-- iPhone 14 Pro 512GB -->
+        <a href="/detail/product-detail.html?id=14pro-512" class="product-card">
+            <div class="card-img">
+                <img src="./img/ip14-promax-gold.webp" alt="iPhone 14 Pro 512GB">
+            </div>
+
+            <h3>iPhone 14 Pro 512GB</h3>
+            <p class="card-version">Chính hãng VN/A</p>
+
+            <div class="card-rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-text">4.9 (104)</span>
+            </div>
+
+            <div class="card-sold">Đã bán 453</div>
+
+            <div class="card-price-box">
+                <span class="price-current">27.990.000đ</span>
+                <span class="price-old">29.990.000đ</span>
+            </div>
+
+            <div class="card-specs">
+                <span>6.1"</span>
+                <span>6GB</span>
+                <span>512GB</span>
+            </div>
+
+            <div class="card-feature">
+                A16 Bionic • ProMotion 120Hz
+            </div>
+
+            <div class="card-installment">
+                Trả góp 0% • 0đ phụ phí • Trả trước từ 0đ • Kỳ hạn đến 6 tháng
+            </div>
+        </a>
+
+        <!-- iPhone 14 Plus 128GB -->
+        <a href="/detail/product-detail.html?id=14plus-128" class="product-card">
+            <div class="card-img">
+                <img src="./img/ip14-thg-blue.webp" alt="iPhone 14 Plus 128GB">
+            </div>
+
+            <h3>iPhone 14 Plus 128GB</h3>
+            <p class="card-version">Chính hãng VN/A</p>
+
+            <div class="card-rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-text">4.7 (58)</span>
+            </div>
+
+            <div class="card-sold">Đã bán 207</div>
+
+            <div class="card-price-box">
+                <span class="price-current">16.990.000đ</span>
+                <span class="price-old">18.990.000đ</span>
+            </div>
+
+            <div class="card-specs">
+                <span>6.7"</span>
+                <span>6GB</span>
+                <span>128GB</span>
+            </div>
+
+            <div class="card-feature">
+                A15 Bionic • Super Retina XDR
+            </div>
+
+            <div class="card-installment">
+                Trả góp 0% • 0đ phụ phí • Trả trước từ 0đ • Kỳ hạn đến 6 tháng
+            </div>
+        </a>
+
+        <!-- iPhone 14 Pro Max 256GB -->
+        <a href="/detail/product-detail.html?id=14promax-256" class="product-card">
+            <div class="card-img">
+                <img src="./img/ip14-promax-purple.webp" alt="iPhone 14 Pro Max 256GB">
+            </div>
+
+            <h3>iPhone 14 Pro Max 256GB</h3>
+            <p class="card-version">Chính hãng VN/A</p>
+
+            <div class="card-rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-text">4.9 (113)</span>
+            </div>
+
+            <div class="card-sold">Đã bán 526</div>
+
+            <div class="card-price-box">
+                <span class="price-current">29.990.000đ</span>
+                <span class="price-old">31.990.000đ</span>
+            </div>
+
+            <div class="card-specs">
+                <span>6.7"</span>
+                <span>6GB</span>
+                <span>256GB</span>
+            </div>
+
+            <div class="card-feature">
+                A16 Bionic • ProMotion 120Hz
+            </div>
+
+            <div class="card-installment">
+                Trả góp 0% • 0đ phụ phí • Trả trước từ 0đ • Kỳ hạn đến 6 tháng
+            </div>
+        </a>
+
+        <!-- iPhone 14 Plus 256GB -->
+        <a href="/detail/product-detail.html?id=14plus-256" class="product-card">
+            <div class="card-img">
+                <img src="./img/ip14-thg-yellow.webp" alt="iPhone 14 Plus 256GB">
+            </div>
+
+            <h3>iPhone 14 Plus 256GB</h3>
+            <p class="card-version">Chính hãng VN/A</p>
+
+            <div class="card-rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-text">4.8 (62)</span>
+            </div>
+
+            <div class="card-sold">Đã bán 229</div>
+
+            <div class="card-price-box">
+                <span class="price-current">19.990.000đ</span>
+                <span class="price-old">21.990.000đ</span>
+            </div>
+
+            <div class="card-specs">
+                <span>6.7"</span>
+                <span>6GB</span>
+                <span>256GB</span>
+            </div>
+
+            <div class="card-feature">
+                A15 Bionic • Super Retina XDR
+            </div>
+
+            <div class="card-installment">
+                Trả góp 0% • 0đ phụ phí • Trả trước từ 0đ • Kỳ hạn đến 6 tháng
+            </div>
+        </a>
+
+        <!-- iPhone 14 Pro 1TB -->
+        <a href="/detail/product-detail.html?id=14pro-1tb" class="product-card">
+            <div class="card-img">
+                <img src="./img/ip14-promax-black.webp" alt="iPhone 14 Pro 1TB">
+            </div>
+
+            <h3>iPhone 14 Pro 1TB</h3>
+            <p class="card-version">Chính hãng VN/A</p>
+
+            <div class="card-rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-text">4.9 (109)</span>
+            </div>
+
+            <div class="card-sold">Đã bán 481</div>
+
+            <div class="card-price-box">
+                <span class="price-current">31.990.000đ</span>
+                <span class="price-old">33.990.000đ</span>
+            </div>
+
+            <div class="card-specs">
+                <span>6.1"</span>
+                <span>6GB</span>
+                <span>1TB</span>
+            </div>
+
+            <div class="card-feature">
+                A16 Bionic • ProMotion 120Hz
+            </div>
+
+            <div class="card-installment">
+                Trả góp 0% • 0đ phụ phí • Trả trước từ 0đ • Kỳ hạn đến 6 tháng
+            </div>
+        </a>
+
+        <!-- iPhone 14 Pro Max 512GB -->
+        <a href="/detail/product-detail.html?id=14promax-512" class="product-card">
+            <div class="card-img">
+                <img src="./img/ip14-promax-purple.webp" alt="iPhone 14 Pro Max 512GB">
+            </div>
+
+            <h3>iPhone 14 Pro Max 512GB</h3>
+            <p class="card-version">Chính hãng VN/A</p>
+
+            <div class="card-rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-text">4.9 (118)</span>
+            </div>
+
+            <div class="card-sold">Đã bán 554</div>
+
+            <div class="card-price-box">
+                <span class="price-current">31.990.000đ</span>
+                <span class="price-old">33.990.000đ</span>
+            </div>
+
+            <div class="card-specs">
+                <span>6.7"</span>
+                <span>6GB</span>
+                <span>512GB</span>
+            </div>
+
+            <div class="card-feature">
+                A16 Bionic • ProMotion 120Hz
+            </div>
+
+            <div class="card-installment">
+                Trả góp 0% • 0đ phụ phí • Trả trước từ 0đ • Kỳ hạn đến 6 tháng
+            </div>
+        </a>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!--========================================================================================================
+                  AI + BEST SELLER + PHỤ KIỆN
+                ================================================================================================== -->
+
+
+
+    <div class="middle-ad-banner">
+        <div class="ad-banner-content">
+            <p class="ad-sub">Hệ sinh thái đỉnh cao</p>
+            <h2>Apple Intelligence Đã Sẵn Sàng</h2>
+            <p class="ad-desc">Trải nghiệm trí tuệ nhân tạo vượt trội thế hệ mới ngay trên iPhone của bạn.</p>
+            <a href="link ở đây" class="btn-ad-buy">Khám phá ngay</a>
+        </div>
+    </div>
+
+
+
+
+    <div class="section-title-box">
+        <h3>Phụ kiện Apple khuyên dùng</h3>
+    </div>
+    <div class="product-grid">
+        <div class="product-card">
+            <div class="card-img">
+                <img src="./img/s-l1600 (2).webp" alt="Ốp lưng MagSafe">
+            </div>
+            <h3>Ốp lưng Silicone MagSafe</h3>
+            <div class="card-stars">★★★★☆ <span>(95)</span></div>
+            <div class="card-sold">Đã bán 1.1k</div>
+            <p class="card-price">1.390.000đ</p>
+            <a href="link ở đây" class="btn-card-buy">Mua ngay</a>
+        </div>
+        <div class="product-card">
+            <div class="card-tag-hot">HOT</div>
+            <div class="card-img">
+                <img src="./img/iphone-17e-thong-so.jpg" alt="Sạc 25W">
+            </div>
+            <h3>Sạc nhanh Apple 25W USB-C</h3>
+            <div class="card-stars">★★★★★ <span>(410)</span></div>
+            <div class="card-sold">Đã bán 5.6k</div>
+            <p class="card-price">650.000đ</p>
+            <a href="link ở đây" class="btn-card-buy">Mua ngay</a>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- =====================================================================
+  CHUONG TRINH SALE
+  ====================================================================== -->
+    <div class="promo-section">
+        <div class="promo-container">
+            <div class="promo-banner trade-in-banner">
+                <div class="promo-text">
+                    <span>Chương trình đặc biệt</span>
+                    <h4>Thu Cũ Đổi Mới</h4>
+                    <p>Lên đời iPhone 17 Series tiết kiệm đến 50% giá trị máy.</p>
+                    <a href="#">Tham gia ngay →</a>
+                </div>
+            </div>
+            <div class="promo-banner installment-banner">
+                <div class="promo-text">
+                    <span>Giải pháp tài chính</span>
+                    <h4>Trả Góp 0% Lãi Suất</h4>
+                    <p>Thủ tục xét duyệt nhanh gọn trong 5 phút qua thẻ tín dụng.</p>
+                    <a href="#">Tìm hiểu thêm →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="services-section">
+        <div class="services-container">
+            <div class="service-box">
+                <div class="service-icon">🚚</div>
+                <h5>Giao hàng hỏa tốc</h5>
+                <p>Miễn phí vận chuyển nội thành trong vòng 2 giờ.</p>
+            </div>
+            <div class="service-box">
+                <div class="service-icon">🛡️</div>
+                <h5>Bảo hành chính hãng</h5>
+                <p>Yên tâm với gói bảo hành 1 đổi 1 trong 12 tháng.</p>
+            </div>
+            <div class="service-box">
+                <div class="service-icon">💎</div>
+                <h5>Hàng chuẩn Apple</h5>
+                <p>Cam kết 100% sản phẩm phân phối chính hãng.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="reviews-section">
+        <h4 class="section-title">Khách hàng nói gì về iZone</h4>
+        <div class="reviews-container">
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p class="review-content">"Máy nguyên seal, nhân viên tư vấn nhiệt tình, giao hàng siêu nhanh chỉ trong
+                    1 tiếng."</p>
+                <span class="reviewer">- Hoàng Đạt</span>
+            </div>
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p class="review-content">"Hỗ trợ làm thủ tục thu cũ đổi mới cực mượt. Định giá máy cũ rất cao và hợp
+                    lý."</p>
+                <span class="reviewer">- Minh Thư</span>
+            </div>
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p class="review-content">"Biết thế mua ở đây sớm hơn. Giao diện đặt hàng online dễ dùng, shipper thân
+                    thiện."</p>
+                <span class="reviewer">- Tuấn Kiệt</span>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<footer class="footer-home">
+
+    <div class="footer-container">
+
+        <div class="footer-column">
+            <h3>iZone Store</h3>
+
+            <p>Chuyên cung cấp các dòng iPhone chính hãng với mức giá tốt và bảo hành uy tín.</p>
+        </div>
+
+        <div class="footer-column">
+            <h3>Sản phẩm</h3>
+
+            <a href="index.html">iPhone 17 Series</a>
+            <a href="home-16.html">iPhone 16 Series</a>
+            <a href="home-15.html">iPhone 15 Series</a>
+            <a href="home-14.html">iPhone 14 Series</a>
+            <a href="home-13.html">iPhone 13 Series</a>
+        </div>
+
+        <div class="footer-column">
+            <h3>Hỗ trợ</h3>
+
+            <a href="#">Liên hệ</a>
+            <a href="#">Chính sách bảo hành</a>
+            <a href="#">Điều khoản</a>
+            <a href="#">Câu hỏi thường gặp</a>
+        </div>
+
+        <div class="footer-column">
+            <h3>Thông tin</h3>
+
+            <p>📍 Hà Nội, Việt Nam</p>
+
+            <p>📞 0349 991 878</p>
+
+            <p>✉ ipstore@gmail.com</p>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <p class="copyright">
+        © 2026 iZone Store. All Rights Reserved.
+    </p>
+
+</footer>
+
+</html>

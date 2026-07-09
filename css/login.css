@@ -6,11 +6,15 @@
     letter-spacing: -0.01em; 
 }
 
+a{
+    transition: 0.2s;
+}
+
 .container {
     display: flex;
     width: 100vw;
     height: 100vh;
-    background-color: #F5F5F7; 
+    background: linear-gradient(135deg,#f7f8fc,#ececec);
 }
 
 /* ------------ Bên trái (Ảnh tràn viền) --------------- */
@@ -18,10 +22,19 @@
     width: 60%;
     height: 100%;
     background-image: url('https://cdn-media.sforum.vn/storage/app/media/doanphuong/anh-iphone-17/anh-iphone-17-th.jpg');
-    background-size: 90% auto;       
+    background-size: 75%;       
     background-position: center; 
     background-repeat: no-repeat;
     background-color: #F5F5F7;
+    position: relative;
+    overflow: hidden;
+}
+
+.left-side::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(255,255,255,.12);
 }
 
 /* --------------------------------------------------------- Bên phải --------------------------------------------------------- */
@@ -34,7 +47,7 @@ img {
 .right-side {
     width: 40%;
     height: 100%;
-    background-color: #FFFFFF; 
+    background-color: #ffffff;; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,6 +59,13 @@ img {
     max-width: 380px; 
 }
 
+.login-subtitle{
+    text-align:center;
+    color:#777;
+    margin-top:-18px;
+    margin-bottom:30px;
+}
+
 .login-title {
     text-align: center;
     color: #1D1D1F; 
@@ -55,6 +75,28 @@ img {
     letter-spacing: -0.02em;
 }
 
+.logo{
+    width:60px;
+    height:60px;
+
+    border-radius:50%;
+
+    background:#1d1d1f;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin:auto;
+
+    margin-bottom:18px;
+
+    font-size:28px;
+}
 /* Khung ô nhập dữ liệu */
 .input-group {
     margin-bottom: 18px;
@@ -83,6 +125,7 @@ img {
 /* Input */
 .input-group input:hover {
     border-color: #86868B;
+    transform:translateY(-1px);
 }
 
 .input-group input:focus {
@@ -121,12 +164,24 @@ img {
     transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn-submit:hover {
-    background-color: #424245;
+.btn-submit:hover{
+    background:#000;
+    transform:translateY(-2px);
+    box-shadow:0 12px 24px rgba(0,0,0,.2);
 }
 
 .btn-submit:active {
     transform: scale(0.99); 
+}
+
+.forgot-pass a { 
+    color: #050505; 
+    font-size: 13px; 
+    text-decoration:none; 
+    transition: text-decoration 0.2s; } 
+
+.forgot-pass a:hover { 
+    text-decoration: underline; 
 }
 
 /* ------------------------------------------ Đường gạch ngang "Hoặc" ------------------------------------ */
@@ -183,6 +238,8 @@ img {
 .social-login button:hover {
     background-color: #F5F5F7; 
     border-color: #86868B;
+    transform:translateY(-2px);
+    box-shadow:0 6px 15px rgba(0,0,0,.08);
 }
 
 .social-login button img {
@@ -200,7 +257,7 @@ img {
 }
 
 .switch-page a {
-    color: #0071E3; 
+    color: #000000; 
     text-decoration: none;
     font-weight: 500;
 }
@@ -223,6 +280,10 @@ img {
 .form-footer a:hover {
     color: #1D1D1F; 
 }
+
+
+
+
 
 @media (max-width: 850px) {
     .container {

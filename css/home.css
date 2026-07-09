@@ -1,4 +1,3 @@
-
 /* ==================================================NAVBAR======================================================= */
 .navbar .container {
     max-width: 1200px !important; /* Dùng !important để đè chết kích thước mặc định của Bootstrap */
@@ -175,6 +174,7 @@ BANNER
 
 .btn-apple.btn-link {
     color: #0071E3; 
+    text-decoration: none;
 }
 
 .btn-apple.btn-link:hover {
@@ -226,116 +226,948 @@ BANNER
     font-size: 14px;
     font-weight: 500;
     border: 1px solid #D2D2D7;
-    border-radius: 20px;
+    border-radius: 10px;
     background-color: #FFFFFF;
     color: #1D1D1F;
     cursor: pointer;
     transition: all 0.2s ease;
+    text-decoration: none;
 }
 
 /* Khi di chuột vào nút */
 .btn-filter:hover {
     background-color: #F5F5F7;
     border-color: #86868B;
+    text-decoration: none;
 }
 
-/* Nút đang được chọn (Active) */
 .btn-filter.active {
     background-color: #1D1D1F;
     color: #FFFFFF;
     border-color: #1D1D1F;
+    text-decoration: none;
 }
 
 
+
+/* =======================================================================
+              CSS TOÀN DIỆN CHO THANH LỌC TIÊU CHÍ (ĐÃ ĐỒNG BỘ MÀU)
+   =========================================================================== */
+
+/* Khung bọc tổng ngoài cùng */
+.filter-criteria-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Tiêu đề "Chọn theo tiêu chí" */
+.filter-criteria-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #1d1d1f;
+    margin-bottom: 15px;
+}
+
+/* Hàng ngang chứa các nút bấm */
+.filter-criteria-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Định dạng chung cho tất cả các nút tiêu chí ngoài hàng ngang */
+.btn-criterion-outline-red, .btn-criterion-gray {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 12px; /* Bo góc tròn vừa phải */
+    transition: all 0.2s ease;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+/* 1. Thiết kế riêng cho duy nhất nút BỘ LỌC (Viền đỏ chữ đỏ) */
+.btn-criterion-outline-red {
+    background-color: #ffffff;
+    border: 1px solid #e30000;
+    color: #e30000;
+}
+.btn-criterion-outline-red:hover {
+    background-color: #fff5f5;
+    transform: translateY(-1px);
+}
+.btn-criterion-outline-red .criterion-icon {
+    margin-right: 6px;
+    font-size: 12px;
+}
+
+/* 2. Thiết kế chung cho TẤT CẢ các nút còn lại (Sẵn hàng, Mới về, RAM, ROM, Camera...) */
+.btn-criterion-gray {
+    background-color: #f5f5f7; /* Nền xám nhạt Apple */
+    color: #1d1d1f;            /* Chữ đen */
+}
+.btn-criterion-gray:hover {
+    background-color: #e8e8ed; /* Xám đậm hơn chút khi hover */
+    transform: translateY(-1px);
+}
+.btn-criterion-gray .criterion-icon {
+    margin-right: 6px;
+}
+
+/* Xóa cái mũi tên tam giác mặc định cực xấu của Bootstrap Dropdown */
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+/* Ký tự mũi tên tự tạo (⋁) ở cuối các nút thả xuống */
+.criterion-arrow {
+    margin-left: 8px;
+    font-size: 10px;
+    color: #86868b;
+}
+
+/* =======================================================================
+               CẤU HÌNH CÁC KHỐI BẢNG THẢ XUỐNG VÀ NÚT BÊN TRONG
+   =========================================================================== */
+
+/* Khung bảng chứa các ô cấu hình (Dropdown Menu) */
+.filter-spec-menu {
+    border-radius: 16px !important;
+    padding: 20px !important;
+    min-width: 420px !important;
+    border: 1px solid #e8e8ed !important;
+    background: #ffffff !important;
+    margin-top: 8px !important;
+}
+
+/* Lưới xếp các nút chọn nhỏ (như các nút Chụp đêm, Quay video, 128GB...) */
+.spec-buttons-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Các nút chọn nhỏ (Chụp đêm, 128GB, v.v.) - Đã đồng bộ màu giống nút tiêu chí ngoài */
+.btn-spec-option {
+    background-color: #f5f5f7; /* Cùng màu xám nhạt */
+    border: 1px solid #e8e8ed;
+    color: #1d1d1f;
+    padding: 8px 18px;
+    font-size: 14px;
+    border-radius: 20px; /* Bo tròn dài như ảnh mẫu */
+    transition: all 0.2s;
+    cursor: pointer;
+}
+.btn-spec-option:hover {
+    background-color: #e8e8ed;
+    border-color: #d2d2d7;
+}
+
+/* Thanh chứa 2 nút chức năng ở đáy bảng */
+.filter-action-row {
+    display: flex;
+    gap: 12px;
+}
+
+/* Nút Đóng */
+.btn-action-close {
+    flex: 1;
+    background-color: #ffffff;
+    border: 1px solid #d2d2d7;
+    color: #1d1d1f;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+.btn-action-close:hover {
+    background-color: #f5f5f7;
+}
+
+/* Nút Xem kết quả màu hồng đỏ nhạt */
+.btn-action-submit {
+    flex: 1.2;
+    background-color: #e57381;
+    color: #ffffff !important;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none !important;
+    transition: all 0.2s;
+}
+.btn-action-submit:hover {
+    background-color: #df5a6b;
+    transform: translateY(-1px);
+}
+
+
+
 /* ==========================================
-   HƯỚNG DẪN ÁP DỤNG CSS GRID CHO SẢN PHẨM
-   ========================================== */
+   PRODUCT GRID
+========================================== */
+
 .product-grid {
     max-width: 1200px;
     margin: 0 auto;
     padding: 40px 20px;
-    
-    /* 1. Kích hoạt Grid */
+
     display: grid;
-    
-    /* 2. Lệnh thần thánh: Tự động chia cột dựa theo kích thước ô.
-       Mỗi ô sản phẩm sẽ rộng tối thiểu 250px và tối đa là chiếm đều nhau (1fr).
-       Nếu màn hình to nó tự chia 4 cột, màn hình laptop chia 3 cột, điện thoại chia 1-2 cột. */
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    
-    /* 3. Khoảng cách giữa các ô sản phẩm (ngang và dọc) */
-    gap: 30px; 
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 28px;
 }
 
-/* Cấu hình từng thẻ sản phẩm tối giản kiểu Apple Store */
+/* ==========================================
+   PRODUCT CARD
+========================================== */
+
 .product-card {
-    background-color: #FFFFFF;
-    border-radius: 18px; /* Bo góc mượt mà */
-    padding: 24px;
-    text-align: center;
-    border: 1px solid #E8E8ED;
-    transition: all 0.3s ease;
+    background: #fff;
+    border: 1px solid #e8e8ed;
+    border-radius: 12px;
+
+    padding: 18px;
+
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Đẩy nút mua ngay luôn nằm dưới đáy card */
+
+    gap: 5px;
+
+    text-decoration: none;
+
+    color: inherit;
+
+    transition: .28s ease;
+
+    overflow: hidden;
+
+    position: relative;
 }
 
-/* Hiệu ứng nhấc nhẹ card lên khi hover */
 .product-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-    border-color: #D2D2D7;
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 12px 28px rgba(0,0,0,.08);
+
+    border-color: #d0d0d7;
 }
 
-/* Khung bọc ảnh sản phẩm để áp dụng hiệu ứng zoom */
+/* ==========================================
+   IMAGE
+========================================== */
+
 .card-img {
-    height: 200px;
+    height: 220px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 15px;
-    overflow: hidden; /* Giữ ảnh không tràn viền khi zoom */
+    overflow: hidden;
 }
 
 .card-img img {
-    max-height: 100%;
-    width: auto;
-    object-fit: contain;
-    transition: transform 0.3s ease; /* Tạo hiệu ứng zoom mượt */
+    max-height: 205px;
+    width:auto;
+    transition: .35s ease;
 }
 
-/* Khi di chuột vào card, ảnh điện thoại sẽ tự động phóng to nhẹ */
 .product-card:hover .card-img img {
-    transform: scale(1.05);
+    transform: scale(1.07);
 }
+
+/* ==========================================
+   NAME
+========================================== */
 
 .product-card h3 {
-    font-size: 18px;
-    color: #1D1D1F;
-    margin-bottom: 8px;
-    font-weight: 600;
+    font-size: 22px;
+    font-weight: 700;
+    color: #1d1d1f;
+    line-height: 1.35;
+    margin-top: 5px;
 }
 
-.card-price {
-    font-size: 15px;
+/* ==========================================
+   VERSION
+========================================== */
+
+.card-version {
+    font-size: 14px;
+    color: #86868b;
+    margin-top: -4px;
+}
+
+/* ==========================================
+   RATING
+========================================== */
+
+.card-rating {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+}
+
+.stars {
+    color: #f6b100;
+    letter-spacing: 1px;
+}
+.rating-text {
+    color: #666;
+}
+
+/* ==========================================
+   SOLD
+========================================== */
+
+.card-sold {
+
+    color: #7a7a7a;
+
+    font-size: 14px;
+
+}
+
+/* ==========================================
+   PRICE
+========================================== */
+
+.card-price-box {
+
+    display: flex;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+}
+
+.price-current {
+
+    font-size: 30px;
+
+    font-weight: 700;
+
+    color: #d70018;
+
+}
+
+.price-old {
+
+    color: #9c9c9c;
+
+    text-decoration: line-through;
+
+    font-size: 16px;
+
+}
+
+/* ==========================================
+   SPECS
+========================================== */
+
+.card-specs {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-top: 2px;
+
+}
+
+.card-specs span {
+
+    border: 1px solid #dcdcdc;
+
+    background: #fafafa;
+
+    border-radius: 7px;
+
+    padding: 5px 10px;
+
+    font-size: 13px;
+
+    color: #555;
+
+    transition: .2s;
+
+}
+
+.product-card:hover .card-specs span {
+
+    background: #f2f2f2;
+
+}
+/* ==========================================
+   FEATURE
+========================================== */
+
+.card-feature {
+
+    font-size: 14px;
+
+    color: #444;
+
+    line-height: 1.5;
+
+}
+
+/* ==========================================
+   INSTALLMENT
+========================================== */
+
+.card-installment {
+
+    margin-top: auto;
+
+    background: #f6f8fc;
+
+    border: 1px solid #e4e9f3;
+
+    border-radius: 10px;
+
+    padding: 10px 12px;
+
+    color: #4f5b6b;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+
+}
+
+/* ==========================================
+   SCROLL ANIMATION
+========================================== */
+
+.product-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-100%;
+
+    width:100%;
+
+    height:3px;
+
+    background:linear-gradient(
+        90deg,
+        #c8ccd0,
+        #ddecff
+    );
+
+    transition:.45s;
+
+}
+
+.product-card:hover::before{
+
+    left:0;
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width:768px){
+
+    .product-grid{
+
+        grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+        gap:18px;
+
+    }
+
+    .product-card{
+
+        padding:15px;
+
+    }
+
+    .product-card h3{
+
+        font-size:19px;
+
+    }
+
+    .price-current{
+
+        font-size:26px;
+
+    }
+
+    .card-img{
+
+        height:180px;
+
+    }
+
+    .card-img img{
+
+        max-height:165px;
+
+    }
+
+}
+
+
+
+/* =======================================================================
+                     CODE UPDATE MỚI (BỚT ĐƠN ĐIỆU)
+   =========================================================================== */
+
+/* 1. KHỐI BANNER PHỤ */
+.promo-section {
+    max-width: 1200px;
+    margin: 40px auto 0;
+    padding: 0 20px;
+}
+
+.promo-container {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.promo-banner {
+    flex: 1;
+    min-width: 280px;
+    background-color: #F5F5F7;
+    border-radius: 18px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #E8E8ED;
+    transition: transform 0.3s ease;
+}
+
+.promo-banner:hover {
+    transform: translateY(-3px);
+}
+
+.promo-text span {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #86868B;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.promo-text h4 {
+    font-size: 22px;
+    color: #1D1D1F;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.promo-text p {
+    font-size: 14px;
     color: #6E6E73;
     margin-bottom: 20px;
+    max-width: 320px;
 }
 
-/* Nút mua ngay trong thẻ sản phẩm */
-.btn-card-buy {
-    display: block;
-    padding: 10px;
-    background-color: #0a0a0a; /* Màu xanh Apple nổi bật */
-    color: #FFFFFF;
+.promo-text a {
+    color: #0071E3;
     text-decoration: none;
-    border-radius: 12px;
     font-size: 14px;
     font-weight: 500;
-    transition: background-color 0.2s;
 }
 
-.btn-card-buy:hover {
-    background-color: #dadada; /* Tối màu hơn một chút khi hover */
-    color: #1D1D1F
+.promo-text a:hover {
+    text-decoration: underline;
+}
+
+/* Custom nhẹ nền màu cho 2 banner phụ để nịnh mắt hơn */
+.trade-in-banner {
+    background: linear-gradient(135deg, #F5F5F7 0%, #EAEAEA 100%);
+}
+.installment-banner {
+    background: linear-gradient(135deg, #F5F5F7 0%, #E3EFFF 100%);
+}
+
+/* 2. KHỐI GIÁ TRỊ CAM KẾT */
+.services-section {
+    max-width: 1200px;
+    margin: 60px auto 0;
+    padding: 0 20px;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    background-color: #FFFFFF;
+    border-radius: 18px;
+    padding: 35px;
+    border: 1px solid #E8E8ED;
+}
+
+.service-box {
+    flex: 1;
+    min-width: 220px;
+    text-align: center;
+}
+
+.service-icon {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.service-box h5 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1D1D1F;
+    margin-bottom: 8px;
+}
+
+.service-box p {
+    font-size: 13px;
+    color: #6E6E73;
+    margin-bottom: 0;
+    line-height: 20px;
+}
+
+/* 3. KHỐI ĐÁNH GIÁ (TESTIMONIALS) */
+.reviews-section {
+    max-width: 1200px;
+    margin: 60px auto 0;
+    padding: 0 20px;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #1D1D1F;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.reviews-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.review-card {
+    flex: 1;
+    min-width: 260px;
+    background-color: #F5F5F7;
+    border-radius: 16px;
+    padding: 25px;
+    border: 1px solid #E8E8ED;
+}
+
+.stars {
+    color: #FFB800;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.review-content {
+    font-size: 14px;
+    color: #1D1D1F;
+    line-height: 22px;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.reviewer {
+    display: block;
+    font-size: 13px;
+    color: #6E6E73;
+    font-weight: 500;
+    text-align: right;
+}
+
+
+/* =======================================================================
+                 ĐOẠN CODE CẢI TIẾN MỚI (DỄ HIỂU - KHÔNG PHỨC TẠP)
+   =========================================================================== */
+
+/* Khối tiêu đề Khám Phá iPhone */
+.explore-header-box {
+    max-width: 1200px;
+    margin: 50px auto 0px; /* Tạo khoảng cách 50px từ banner xuống */
+    padding: 0 20px;
+    text-align: center;
+}
+
+.explore-header-box h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1d1d1f;
+    margin-bottom: 5px;
+}
+
+.explore-header-box p {
+    font-size: 16px;
+    color: #6e6e73;
+}
+
+/* Chỉnh lại khoảng cách cho cụm nút lọc của ông */
+.product-filter-section {
+    padding: 20px 20px 30px 20px !important; /* Thu hẹp lại để tạo luồng thị giác sát sản phẩm */
+}
+
+/* Khối tiêu đề các mục sản phẩm (Nổi bật, Bán chạy, Phụ kiện) */
+.section-title-box {
+    max-width: 1200px;
+    margin: 40px auto 10px; /* Khoảng cách trên dưới hợp lý */
+    padding: 0 20px;
+}
+
+.section-title-box h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #1d1d1f;
+}
+
+.section-title-box1{
+    max-width: 1200px;
+    margin: 30px auto;
+    right: 20px;
+}
+
+.section-title-box1 h4{
+    font-weight: 600;
+    font-size: 22px;
+    color: #1d1d1f;
+}
+
+/* GIÚP CARD SẢN PHẨM CŨ ĐẸP HƠN & THÊM HIỆU ỨNG APPLE */
+.product-card {
+    position: relative; /* Để làm điểm bám cho các cái tag HOT/NEW */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.02); /* Đổ bóng nhẹ sẵn */
+    transition: all 0.3s ease !important; /* Chuyển động mượt mà khi hover */
+}
+
+/* Hiệu ứng nhấc card lên khi hover */
+.product-card:hover {
+    transform: translateY(-8px) !important;
+    box-shadow: 0 12px 24px rgba(0,0,0,0.08) !important;
+}
+
+/* CSS Cho các Tag Trạng Thái (HOT, NEW, SALE) ==========================================================================*/
+
+
+.card-tag-hot, .card-tag-sale ,.card-tag-pre, .card-tag-value, .card-tag-new , .card-tag-best, .card-tag-top {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 6px;
+    color: white;
+    z-index: 3;
+}
+.card-tag-hot { background-color: #EF4444; }
+.card-tag-sale { background-color: #E11D48; }
+.card-tag-pre{
+    background-color: #0A84FF;
+}
+.card-tag-best{
+    background-color: #ff7a00;
+}
+.card-tag-top{
+    background-color: #FFC107;
+}
+.card-tag-value{
+    background-color: #22C55E;
+}
+.card-tag-new{
+    background-color: #06B6D4;
+}
+
+
+/* CSS Cho khu vực đánh giá sao và số lượng đã bán */
+.card-stars {
+    font-size: 13px;
+    color: #ffb800;
+    margin-top: 5px;
+}
+.card-stars span {
+    color: #86868b;
+}
+.card-sold {
+    font-size: 12px;
+    color: #6e6e73;
+    margin-bottom: 10px;
+}
+
+/* CẤU HÌNH BANNER QUẢNG CÁO GIỮA TRANG */
+
+.middle-ad-banner {
+    width: 100%;
+    height: 350px;
+
+    background-image:
+        linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+        url("https://images.macrumors.com/t/QXQ3qDkhrxMrGY5_SLp7tyYc6bg=/1600x/article-new/2024/09/apple-intelligence-black.jpeg");
+
+    background-size: 75%; /* hoặc cover nếu thích */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: #fff;
+    margin: 60px 0;
+}
+
+.middle-ad-content h2 {
+    font-size: 52px;
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+}
+
+.middle-ad-content {
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    z-index: 1;
+}
+
+.middle-ad-content .tag {
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,.8);
+}
+
+.ad-banner-content .ad-desc {
+    font-size: 15px;
+    color: #d2d2d7;
+    margin-bottom: 25px;
+}
+
+.btn-ad-buy {
+    display: inline-block;
+    padding: 10px 24px;
+    background-color: white;
+    color: #1d1d1f;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.btn-ad-buy:hover {
+    background-color: #f5f5f7;
+    color: #0071E3;
+}
+
+/* =======================================================================
+                          FOOTER
+   =========================================================================== */
+
+.footer-home{
+
+    background:#111;
+
+    color:white;
+
+    margin-top:80px;
+
+    padding:50px 8% 20px;
+
+}
+
+.footer-container{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    flex-wrap:wrap;
+
+    gap:40px;
+
+}
+
+.footer-column{
+
+    width:220px;
+
+}
+
+.footer-column h3{
+
+    margin-bottom:18px;
+
+}
+
+.footer-column p{
+
+    color:#ccc;
+
+    line-height:28px;
+
+}
+
+.footer-column a{
+
+    display:block;
+
+    color:#ccc;
+
+    text-decoration:none;
+
+    margin-bottom:12px;
+
+}
+
+.footer-column a:hover{
+
+    color:white;
+
+}
+
+.footer-home hr{
+
+    margin:35px 0 20px;
+
+    border:0;
+
+    border-top:1px solid #444;
+
+}
+
+.copyright{
+
+    text-align:center;
+
+    color:#999;
+
 }
