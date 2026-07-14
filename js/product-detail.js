@@ -15,7 +15,7 @@ const databaseProducts = {
         colors: [
             { name: "Tím Oải Hương", hex: "#E6E1F3", img: "../img/ip17-thg-purple.webp" },
             { name: "Xanh Lá Xô Thơm", hex: "#b3e6b9", img: "../img/ip17-thg-green.webp" },
-            { name: "Đen", hex: "#3C3D3A", img: "../img/ip17-thg-black.webp.webp" },
+            { name: "Đen", hex: "#3C3D3A", img: "../img/ip17-thg-black.webp" },
             { name: "Xanh Lam Khói", hex: "#009ac9", img: "../img/ip17-thg-blue.webp" },
             { name: "Trắng", hex: "#ffffff", img: "../img/ip17-thg-white.webp"}
         ],
