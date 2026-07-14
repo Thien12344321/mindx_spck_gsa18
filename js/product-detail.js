@@ -13,23 +13,23 @@ const databaseProducts = {
             { label: "512GB", price: "28.990.000đ" }
         ],
         colors: [
-            { name: "Tím Oải Hương", hex: "#E6E1F3", img: "/img/iphone_17_256gb-3.webp" },
-            { name: "Xanh Lá Xô Thơm", hex: "#b3e6b9", img: "/img/iphone_17_sage_pdp_image_position_1_sage_color__vn-vi_1.webp" },
-            { name: "Đen", hex: "#3C3D3A", img: "/img/iphone_17_256gb_2 (1).webp" },
-            { name: "Xanh Lam Khói", hex: "#009ac9", img: "/img/iphone_17_256gb-2.webp" },
-            { name: "Trắng", hex: "#ffffff", img: "/img/256gb_2.webp"}
+            { name: "Tím Oải Hương", hex: "#E6E1F3", img: "../img/ip17-thg-purple.webp" },
+            { name: "Xanh Lá Xô Thơm", hex: "#b3e6b9", img: "../img/ip17-thg-green.webp" },
+            { name: "Đen", hex: "#3C3D3A", img: "../img/ip17-thg-black.webp.webp" },
+            { name: "Xanh Lam Khói", hex: "#009ac9", img: "../img/ip17-thg-blue.webp" },
+            { name: "Trắng", hex: "#ffffff", img: "../img/ip17-thg-white.webp"}
         ],
         thumbnails: [
-            "/img/ip17-thg-purple.webp",
-            "/img/ip17-small-1.webp",
-            "/img/ip17-small-2.webp",
-            "/img/ip17-small-3.webp",
-            "/img/ip17-small-4.webp",
-            "/img/ip17-thg-review1.webp",
-            "/img/ip17-thg-review2.webp",
-            "/img/ip17-thg-review3.webp",
-            "/img/ip17-thg-review4.webp",
-            "/img/ip17-thg-review5.webp"
+            "../img/ip17-thg-purple.webp",
+            "../img/ip17-small-1.webp",
+            "../img/ip17-small-2.webp",
+            "../img/ip17-small-3.webp",
+            "../img/ip17-small-4.webp",
+            "../img/ip17-thg-review1.webp",
+            "../img/ip17-thg-review2.webp",
+            "../img/ip17-thg-review3.webp",
+            "../img/ip17-thg-review4.webp",
+            "../img/ip17-thg-review5.webp"
         ]
     },
     "17promax": {
