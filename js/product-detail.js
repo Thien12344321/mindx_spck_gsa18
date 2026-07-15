@@ -9,7 +9,6 @@ const databaseProducts = {
         title: "iPhone 17 Pro 256GB",
         oldPrice: "32.990.000đ",
         storages: [
-            { label: "128GB", price: "27.990.000đ" },
             { label: "256GB", price: "30.990.000đ" },
             { label: "512GB", price: "34.990.000đ" }
         ],
@@ -63,8 +62,8 @@ const databaseProducts = {
         title: "iPhone 17e 256GB",
         oldPrice: "23.990.000đ",
         storages: [
-            { label: "128GB", price: "18.990.000đ" },
-            { label: "256GB", price: "21.990.000đ" }
+            { label: "256GB", price: "21.990.000đ" },
+            { label: "512GB", price: "24.990.000đ"}
         ],
         colors: [
             { name: "Hồng Thạch Anh", hex: "#fbc2d5", img: "../img/ip17e-pink.webp" },
@@ -96,7 +95,6 @@ const databaseProducts = {
         title: "iPhone 17 Pro 512GB",
         oldPrice: "36.990.000đ",
         storages: [
-            { label: "128GB", price: "27.990.000đ" },
             { label: "256GB", price: "30.990.000đ" },
             { label: "512GB", price: "34.990.000đ" }
         ],
