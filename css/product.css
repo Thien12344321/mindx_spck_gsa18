@@ -135,8 +135,10 @@ body {
     transform: translateY(-50%) scale(1.1);
 }
 
-.btn-prev { left: 0; }
-.btn-next { right: 0; }
+.btn-prev { left: 0; 
+}
+.btn-next { right: 0;
+ }
 
 .slider-btn.disabled {
     opacity: 0;               /* Ẩn mượt mà thay vì làm mờ đục cứng nhắc */
