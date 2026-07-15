@@ -6,6 +6,12 @@
     letter-spacing: -0.01em; 
 }
 
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 a{
     transition: 0.2s;
 }
@@ -47,7 +53,7 @@ img {
 .right-side {
     width: 40%;
     height: 95%;
-    background-color: #ffffff;; 
+    background-color: #ffffff;;
     display: flex;
     justify-content: center;
     align-items: center;
