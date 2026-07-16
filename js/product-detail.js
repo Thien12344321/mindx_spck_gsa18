@@ -9,17 +9,28 @@ const databaseProducts = {
         title: "iPhone 17 Pro 256GB",
         oldPrice: "32.990.000đ",
         storages: [
-            { label: "256GB", price: "30.990.000đ" },
-            { label: "512GB", price: "34.990.000đ" }
+            { label: "256GB", price: "33.990.000đ" },
+            { label: "512GB", price: "39.990.000đ" },
+            {label: "1TB", price: "44.890.000đ"}
         ],
         colors: [
-            { name: "Titan Cam Vũ Trụ", hex: "#ff7701", img: "../img/ip17-promax-orange.webp" },
-            { name: "Titan Tự Nhiên", hex: "#8e8d89", img: "../img/ip17-pro-natural.webp" },
-            { name: "Titan Đen", hex: "#3b3c3e", img: "../img/ip17-pro-black.webp" }
+            { name: "Cam Vũ Trụ", hex: "#ff7701", img: "../img/ip17-promax-orange.webp" },
+            { name: "Bạc", hex: "#afaeab", img: "../img/ip17-promax-lightgrey.webp" },
+            { name: "Xanh Đậm", hex: "#2c364b", img: "../img/ip17-promax-blue-black.webp" }
         ],
         thumbnails: [
             "../img/ip17-promax-orange.webp",
-            "../img/ip17-pro-detail-1.webp"
+            "../img/ip17-promax-detail1.webp",
+            "../img/ip17-promax-detail2.webp",
+            "../img/ip17-promax-detail3.webp",
+            "../img/ip17-promax-detail4.webp",
+            "../img/ip17-promax-detail5.webp",
+            "../img/ip17-promax-detail6.webp",
+            "../img/ip17-promax-detail7.webp",
+            "../img/ip17-promax-detail8.webp",
+            "../img/ip17-promax-detail9.webp",
+            "../img/help.webp"
+
         ]
     },
 
@@ -27,83 +38,146 @@ const databaseProducts = {
         title: "iPhone 17 256GB",
         oldPrice: "27.990.000đ",
         storages: [
-            { label: "256GB", price: "25.990.000đ" },
-            { label: "512GB", price: "29.990.000đ" }
+            { label: "256GB", price: "23.990.000đ" },
+            { label: "512GB", price: "30.990.000đ" }
         ],
         colors: [
             { name: "Tím Oải Hương", hex: "#E6E1F3", img: "../img/ip17-thg-purple.webp" },
             { name: "Xanh Lam Khói", hex: "#009ac9", img: "../img/ip17-thg-blue.webp" },
-            { name: "Trắng", hex: "#ffffff", img: "../img/ip17-thg-white.webp" }
+            { name: "Trắng", hex: "#ffffff", img: "../img/ip17-thg-white.webp" },
+            {name: "Đen", hex:"#0d0c0c", img: "../img/ip17-thg-black.webp"},
+            {name: "Xanh Lá Xô Thơm", hex:"#89b379", img: "../img/ip17-thg-green.webp"}
+
         ],
         thumbnails: [
             "../img/ip17-thg-purple.webp",
-            "../img/ip17-detail-1.webp"
+            "../img/ip17-thg-review-1.webp",
+            "../img/ip17-thg-review-2.webp",
+            "../img/ip17-thg-review-3.webp",
+            "../img/ip17-thg-review-4.webp",
+            "../img/ip17-thg-review1.webp",
+            "../img/ip17-thg-review2.webp",
+            "../img/ip17-thg-review3.webp",
+            "../img/ip17-thg-review4.webp",
+            "../img/ip17-thg-review5.webp",
+            "../img/help.webp"
+
         ]
     },
 
     "17air-256": {
-        title: "iPhone Air 256GB",
-        oldPrice: "30.990.000đ",
+        title: "iPhone Air",
+        oldPrice: "31.990.000đ",
         storages: [
-            { label: "256GB", price: "28.990.000đ" },
-            { label: "512GB", price: "32.990.000đ" }
+            { label: "256GB", price: "22.990.000đ" },
+            { label: "512GB", price: "28.990.000đ" },
+            {label: "1TB", price: "31.990.000đ"}
         ],
         colors: [
-            { name: "Xanh Băng Tuyết", hex: "#a5cad2", img: "../img/ipair-blue.webp" },
-            { name: "Bạc", hex: "#e3e3e3", img: "../img/ipair-silver.webp" }
+            { name: "Trắng Mây", hex: "#a5cad2", img: "../img/ipair-white.webp" },
+            { name: "Đen Không Gian", hex: "#141010", img: "../img/ipair-black.webp" },
+            { name: "Xanh Da Trời", hex: "#e3e3e3", img: "../img/ipair-blue.webp" },
+            { name: "Vàng Nhạt", hex: "#e3e3e3", img: "../img/ipair-yellow.webp" },
+
         ],
         thumbnails: [
             "../img/ipair-blue.webp",
-            "../img/ipair-detail-1.webp"
+            "../img/ipair-1.webp",
+            "../img/ipair-2.webp",
+            "../img/ipair-3.webp",
+            "../img/ipair-4.webp",
+            "../img/ipair-5.webp",
+            "../img/ipair-6.webp",
+            "../img/ipair-7.webp",
+            "../img/ipair-8.webp",
+            "../img/ipair-9.webp",
+            "../img/help.webp",
+
         ]
     },
 
     "17e-256": {
-        title: "iPhone 17e 256GB",
-        oldPrice: "23.990.000đ",
+        title: "iPhone 17e",
+        oldPrice: "Không có",
         storages: [
-            { label: "256GB", price: "21.990.000đ" },
-            { label: "512GB", price: "24.990.000đ"}
+            { label: "256GB", price: "17.390.000đ" },
+            { label: "512GB", price: "22.990.000đ"}
         ],
         colors: [
-            { name: "Hồng Thạch Anh", hex: "#fbc2d5", img: "../img/ip17e-pink.webp" },
-            { name: "Xanh Lục Nhạt", hex: "#bcf2db", img: "../img/ip17e-green.webp" }
+            { name: "Hồng", hex: "#fbc2d5", img: "../img/ip17e-pink.webp" },
+            { name: "Trắng", hex: "#f7fffc", img: "../img/ip17e-white.webp" },
+            {name: "Đen", hex:"#181616", img: "../img/ip17e-black.webp"}
         ],
         thumbnails: [
-            "../img/ip17e-pink.webp"
+            "../img/ip17e-pink.webp",
+            "../img/ip17e-1.jpg",
+            "../img/ip17e-2.jpg",
+            "../img/ip17e-3.jpg",
+            "../img/ip17e-4.jpg",
+            "../img/ip17e-5.jpg",
+            "../img/ip17e-6.jpg",
+            "../img/ip17e-7.jpg",
+
+
         ]
     },
 
     "17promax-256": {
-        title: "iPhone 17 Pro Max 256GB",
+        title: "iPhone 17 Promax",
         oldPrice: "37.990.000đ",
         storages: [
             { label: "256GB", price: "35.990.000đ" },
-            { label: "512GB", price: "39.990.000đ" },
-            { label: "1TB", price: "45.990.000đ" }
+            { label: "512GB", price: "42.990.000đ" },
+            {label: "1TB", price: "48.890.000đ"},
+            {label: "2TB", price: "60.590.000đ"}
         ],
         colors: [
-            { name: "Titan Cam Vũ Trụ", hex: "#ff7701", img: "../img/ip17-promax-orange.webp" },
-            { name: "Titan Trắng", hex: "#f1f2ed", img: "../img/ip17-promax-white.webp" }
+            { name: "Cam Vũ Trụ", hex: "#ff7701", img: "../img/ip17-promax-orange.webp" },
+            { name: "Bạc", hex: "#afaeab", img: "../img/ip17-promax-lightgrey.webp" },
+            { name: "Xanh Đậm", hex: "#2c364b", img: "../img/ip17-promax-blue-black.webp" }
         ],
         thumbnails: [
-            "../img/ip17-promax-orange.webp"
+            "../img/ip17-promax-orange.webp",
+            "../img/ip17-promax-detail1.webp",
+            "../img/ip17-promax-detail2.webp",
+            "../img/ip17-promax-detail3.webp",
+            "../img/ip17-promax-detail4.webp",
+            "../img/ip17-promax-detail5.webp",
+            "../img/ip17-promax-detail6.webp",
+            "../img/ip17-promax-detail7.webp",
+            "../img/ip17-promax-detail8.webp",
+            "../img/ip17-promax-detail9.webp",
+            "../img/help.webp"
+
         ]
     },
 
     "17pro-512": {
-        title: "iPhone 17 Pro 512GB",
-        oldPrice: "36.990.000đ",
+        title: "iPhone 17 Pro",
+        oldPrice: "32.990.000đ",
         storages: [
-            { label: "256GB", price: "30.990.000đ" },
-            { label: "512GB", price: "34.990.000đ" }
+            { label: "256GB", price: "33.990.000đ" },
+            { label: "512GB", price: "39.990.000đ" },
+            {label: "1TB", price: "44.890.000đ"}
         ],
         colors: [
-            { name: "Titan Cam Vũ Trụ", hex: "#ff7701", img: "../img/ip17-promax-orange.webp" },
-            { name: "Titan Tự Nhiên", hex: "#8e8d89", img: "../img/ip17-pro-natural.webp" }
+            { name: "Cam Vũ Trụ", hex: "#ff7701", img: "../img/ip17-promax-orange.webp" },
+            { name: "Bạc", hex: "#afaeab", img: "../img/ip17-promax-lightgrey.webp" },
+            { name: "Xanh Đậm", hex: "#2c364b", img: "../img/ip17-promax-blue-black.webp" }
         ],
         thumbnails: [
-            "../img/ip17-promax-orange.webp"
+            "../img/ip17-promax-orange.webp",
+            "../img/ip17-promax-detail1.webp",
+            "../img/ip17-promax-detail2.webp",
+            "../img/ip17-promax-detail3.webp",
+            "../img/ip17-promax-detail4.webp",
+            "../img/ip17-promax-detail5.webp",
+            "../img/ip17-promax-detail6.webp",
+            "../img/ip17-promax-detail7.webp",
+            "../img/ip17-promax-detail8.webp",
+            "../img/ip17-promax-detail9.webp",
+            "../img/help.webp"
+
         ]
     },
 
@@ -112,99 +186,151 @@ const databaseProducts = {
  // ---------------------------IP 16 SERIES----------------------------------
 
     "16-256": {
-        title: "iPhone 16 256GB",
-        oldPrice: "24.990.000đ",
+        title: "iPhone 16",
+        oldPrice: "22.990.000đ",
         storages: [
-            { label: "128GB", price: "19.990.000đ" }, // Thêm option phụ cho phong phú giống mẫu
-            { label: "256GB", price: "22.990.000đ" },
-            { label: "512GB", price: "27.990.000đ" }
+            { label: "128GB", price: "20.990.000đ" }, // Thêm option phụ cho phong phú giống mẫu
+            { label: "256GB", price: "22.190.000đ" },
+            { label: "512GB", price: "26.990.000đ" }
         ],
         colors: [
-            { name: "Xanh Lưu Ly", hex: "#a1e3f6", img: "../img/ip16-thg-blue.webp" },
+            { name: "Xanh Lưu Ly", hex: "#09b8e8", img: "../img/ip16-thg-blue.webp" },
             { name: "Hồng", hex: "#fbc2d5", img: "../img/ip16-thg-pink.webp" },
-            { name: "Xanh Lục Bảo", hex: "#9ee3cd", img: "../img/ip16-thg-green.webp" },
+            { name: "Xanh Mòng Két", hex: "#64d4b1", img: "../img/ip16-thg-lightblue.webp" },
             { name: "Trắng", hex: "#ffffff", img: "../img/ip16-thg-white.webp" },
             { name: "Đen", hex: "#323335", img: "../img/ip16-thg-black.webp" }
         ],
         thumbnails: [
             "../img/ip16-thg-blue.webp",
-            "../img/ip16-detail-1.webp",
-            "../img/ip16-detail-2.webp"
+            "../img/ip16-1.webp",
+            "../img/ip16-2.webp",
+            "../img/ip16-3.webp",
+            "../img/ip16-4.webp",
+            "../img/ip16-5.webp",
+            "../img/ip16-6.webp",
+            "../img/ip16-7.webp",
+            "../img/ip16-8.webp",
+            "../img/ip16-9.webp",
+
         ]
     },
 
     "16plus-128": {
-        title: "iPhone 16 Plus 128GB",
+        title: "iPhone 16 Plus",
         oldPrice: "25.990.000đ",
         storages: [
-            { label: "128GB", price: "23.990.000đ" },
+            { label: "128GB", price: "24.490.000đ" }, // Thêm option phụ cho phong phú giống mẫu
             { label: "256GB", price: "26.990.000đ" },
-            { label: "512GB", price: "31.990.000đ" }
+            { label: "512GB", price: "28.990.000đ" }
         ],
         colors: [
-            { name: "Xanh Lưu Ly", hex: "#a1e3f6", img: "../img/ip16-thg-blue.webp" },
+            { name: "Xanh Lưu Ly", hex: "#09b8e8", img: "../img/ip16-thg-blue.webp" },
             { name: "Hồng", hex: "#fbc2d5", img: "../img/ip16-thg-pink.webp" },
+            { name: "Xanh Mòng Két", hex: "#64d4b1", img: "../img/ip16-thg-lightblue.webp" },
+            { name: "Trắng", hex: "#ffffff", img: "../img/ip16-thg-white.webp" },
             { name: "Đen", hex: "#323335", img: "../img/ip16-thg-black.webp" }
         ],
         thumbnails: [
             "../img/ip16-thg-blue.webp",
-            "../img/ip16-plus-detail-1.webp"
+            "../img/ip16-1.webp",
+            "../img/ip16-2.webp",
+            "../img/ip16-3.webp",
+            "../img/ip16-4.webp",
+            "../img/ip16-5.webp",
+            "../img/ip16-6.webp",
+            "../img/ip16-7.webp",
+            "../img/ip16-8.webp",
+            "../img/ip16-9.webp",
+
         ]
     },
 
     "16pro-256": {
-        title: "iPhone 16 Pro 256GB",
-        oldPrice: "32.990.000đ",
+        title: "iPhone 16 Pro",
+        oldPrice: "28.990.000đ",
         storages: [
-            { label: "128GB", price: "27.990.000đ" },
-            { label: "256GB", price: "30.990.000đ" },
-            { label: "512GB", price: "35.990.000đ" },
-            { label: "1TB", price: "40.990.000đ" }
+            { label: "128GB", price: "23.990.000đ" },
+            { label: "256GB", price: "27.990.000đ" },
+            { label: "512GB", price: "31.990.000đ" },
+            { label: "1TB", price: "35.990.000đ" }
         ],
         colors: [
-            { name: "Sa Mạc", hex: "#c2b29f", img: "../img/ip16-promax-dessert.webp" },
-            { name: "Titan Tự Nhiên", hex: "#8e8d89", img: "../img/ip16-pro-natural.webp" },
-            { name: "Titan Trắng", hex: "#f1f2ed", img: "../img/ip16-pro-white.webp" },
-            { name: "Titan Đen", hex: "#3b3c3e", img: "../img/ip16-pro-black.webp" }
+            { name: "Titan Sa Mạc", hex: "#c2b29f", img: "../img/ip16-promax-dessert.webp" },
+            { name: "Titan Tự Nhiên", hex: "#8e8d89", img: "../img/ip16-promax-titan.webp" },
+            { name: "Titan Trắng", hex: "#f1f2ed", img: "../img/ip16-promax-white.webp" },
+            { name: "Titan Đen", hex: "#3b3c3e", img: "../img/ip16-promax-black.webp" }
         ],
         thumbnails: [
             "../img/ip16-promax-dessert.webp",
-            "../img/ip16-pro-detail-1.webp"
+            "../img/ip16prmx-1.webp",
+            "../img/ip16prmx-2.webp",
+            "../img/ip16prmx-3.webp",
+            "../img/ip16prmx-4.webp",
+            "../img/ip16prmx-5.webp",
+            "../img/ip16prmx-6.webp",
+            "../img/ip16prmx-7.webp",
+            "../img/ip16prmx-8.webp",
+            "../img/ip16prmx-9.webp",
+
         ]
     },
 
     "16plus-512": {
-        title: "iPhone 16 Plus 512GB",
-        oldPrice: "29.990.000đ",
+        title: "iPhone 16 Plus",
+        oldPrice: "22.990.000đ",
         storages: [
-            { label: "128GB", price: "23.990.000đ" },
+            { label: "128GB", price: "24.490.000đ" }, // Thêm option phụ cho phong phú giống mẫu
             { label: "256GB", price: "26.990.000đ" },
-            { label: "512GB", price: "27.890.000đ" }
+            { label: "512GB", price: "28.990.000đ" }
         ],
         colors: [
-            { name: "Xanh Lưu Ly", hex: "#a1e3f6", img: "../img/ip16-thg-blue.webp" },
+            { name: "Xanh Lưu Ly", hex: "#09b8e8", img: "../img/ip16-thg-blue.webp" },
+            { name: "Hồng", hex: "#fbc2d5", img: "../img/ip16-thg-pink.webp" },
+            { name: "Xanh Mòng Két", hex: "#64d4b1", img: "../img/ip16-thg-lightblue.webp" },
+            { name: "Trắng", hex: "#ffffff", img: "../img/ip16-thg-white.webp" },
             { name: "Đen", hex: "#323335", img: "../img/ip16-thg-black.webp" }
         ],
         thumbnails: [
-            "../img/ip16-thg-blue.webp"
+            "../img/ip16-thg-blue.webp",
+            "../img/ip16-1.webp",
+            "../img/ip16-2.webp",
+            "../img/ip16-3.webp",
+            "../img/ip16-4.webp",
+            "../img/ip16-5.webp",
+            "../img/ip16-6.webp",
+            "../img/ip16-7.webp",
+            "../img/ip16-8.webp",
+            "../img/ip16-9.webp",
+
         ]
     },
 
     "16promax-512": {
-        title: "iPhone 16 Pro Max 512GB",
-        oldPrice: "33.990.000đ",
+        title: "iPhone 16 Promax",
+        oldPrice: "39.990.000đ",
         storages: [
-            { label: "256GB", price: "29.990.000đ" },
-            { label: "512GB", price: "31.990.000đ" },
-            { label: "1TB", price: "37.990.000đ" }
+            { label: "256GB", price: "30.990.000đ" },
+            { label: "512GB", price: "37.990.000đ" },
+            { label: "1TB", price: "42.990.000đ" }
         ],
         colors: [
-            { name: "Sa Mạc", hex: "#c2b29f", img: "../img/ip16-promax-dessert.webp" },
-            { name: "Titan Tự Nhiên", hex: "#8e8d89", img: "../img/ip16-pro-natural.webp" },
-            { name: "Titan Đen", hex: "#3b3c3e", img: "../img/ip16-pro-black.webp" }
+            { name: "Titan Sa Mạc", hex: "#c2b29f", img: "../img/ip16-promax-dessert.webp" },
+            { name: "Titan Tự Nhiên", hex: "#8e8d89", img: "../img/ip16-promax-titan.webp" },
+            { name: "Titan Trắng", hex: "#f1f2ed", img: "../img/ip16-promax-white.webp" },
+            { name: "Titan Đen", hex: "#3b3c3e", img: "../img/ip16-promax-black.webp" }
         ],
         thumbnails: [
-            "../img/ip16-promax-dessert.webp"
+            "../img/ip16-promax-dessert.webp",
+            "../img/ip16prmx-1.webp",
+            "../img/ip16prmx-2.webp",
+            "../img/ip16prmx-3.webp",
+            "../img/ip16prmx-4.webp",
+            "../img/ip16prmx-5.webp",
+            "../img/ip16prmx-6.webp",
+            "../img/ip16prmx-7.webp",
+            "../img/ip16prmx-8.webp",
+            "../img/ip16prmx-9.webp",
+
         ]
     },
 
@@ -226,18 +352,26 @@ const databaseProducts = {
 
     "16e-256": {
         title: "iPhone 16e 256GB",
-        oldPrice: "18.990.000đ",
+        oldPrice: "Không có",
         storages: [
-            { label: "128GB", price: "11.990.000đ" },
-            { label: "256GB", price: "13.990.000đ" }
+            { label: "128GB", price: "13.690.000đ" },
+            { label: "256GB", price: "16.190.000đ" }
         ],
         colors: [
             { name: "Trắng", hex: "#ffffff", img: "../img/ip16e-white.webp" },
-            { name: "Xanh Lưu Ly", hex: "#a1e3f6", img: "../img/ip16e-blue.webp" },
-            { name: "Hồng Vàng", hex: "#fad2e1", img: "../img/ip16e-pink.webp" }
+            { name: "Đen", hex: "#131414", img: "../img/ip16e-black.webp" },
         ],
         thumbnails: [
-            "../img/ip16e-white.webp"
+            "../img/ip16e-black.webp",
+            "../img/ip16e-1.webp",
+            "../img/ip16e-2.webp",
+            "../img/ip16e-3.webp",
+            "../img/ip16e-4.webp",
+            "../img/ip16e-5.webp",
+            "../img/ip16e-6.webp",
+            "../img/ip16e-7.webp",
+            "../img/ip16e-8.webp",
+
         ]
     },
 
